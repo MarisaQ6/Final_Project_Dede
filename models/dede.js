@@ -2,11 +2,13 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
-const Dede = new Schema({
-    username: String,
-    password: String
+const deDeSchema = new Schema({
+    drinks: String,
+    abv: String,
+    calories: String,
+    created_at: {type: Date, default: Date.now}
 });
 
 
-
-module.exports = 
+const Dede = mongoost.model("DeDe", deDeSchema);
+module.exports = Dede;

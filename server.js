@@ -54,7 +54,7 @@ passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
 /* === Mongoose Connection === */
-mongoose.connect('mongodb://localhost/mern_authenticate_me',{ useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/DeDe_DB',{ useNewUrlParser: true });
 
 /* === Error Handling === */
 
