@@ -26,20 +26,20 @@ const listStyle = {
 const AuthExample = () => (
 	<Router>
 		<div>
-      		<Nav className="App-header"/>
-			  <Main />
+      		{/* <Nav className="App-header"/> */}
 			<Container>
-				<AuthButton/>
+				{/* <AuthButton/>
 				<ul style={listStyle}>
 					<li><Link to="/public">Public Page</Link></li>
 					<li><Link to="/protected">Protected Page</Link></li>
 					<li><Link to="/register">Register a New User</Link></li>
-				</ul>
+				</ul> */}
 				<Switch>
-					<Route path="/public" component={PublicRoute}/>
-					<Route path="/login" component={Login}/>
-					<Route path="/register" component={Register}/>
-					<PrivateRoute path="/protected" component={ProtectedRoute}/>
+					<Route exact path="/" component={Main}/>
+					<Route exact path="/public" component={PublicRoute}/>
+					<Route exact path="/login" component={Login}/>
+					<Route exact path="/register" component={Register}/>
+					<PrivateRoute exact path="/protected" component={ProtectedRoute}/>
 					{/* <Route component={NoMatch} /> */}
 				</Switch>
 			</Container>

@@ -35,7 +35,7 @@ class Nav extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
         <Link className="navbar-brand" to="/">
-          Auth Plate
+          Hey DeDe!
         </Link>
         <button
           onClick={this.toggleNav}

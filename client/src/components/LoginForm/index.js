@@ -1,10 +1,11 @@
 import React from 'react'
+import './style.css'
 
 class LoginForm extends React.Component {
 	// refs
-	form: null;
-	usernameElem: null;
-	passwordElem: null;
+	// form: null;
+	// usernameElem: null;
+	// passwordElem: null;
 
 	render() {
 		const { onLogin } = this.props;
@@ -23,7 +24,7 @@ class LoginForm extends React.Component {
 					<div className="form-group">
 						<input className="form-control" ref={(input) => this.usernameElem = input} type='text' name="username" placeholder='Enter Username' /><br/>
 						<input className="form-control" ref={(input) => this.passwordElem = input} type='password' name="password" placeholder='Password' /><br/>
-						<button className="btn btn-success" type='submit'>
+						<button className="btn btn-success loginbtn" type='submit'>
 							Submit
 						</button>
 					</div>
