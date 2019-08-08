@@ -1,0 +1,27 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;;
+    font-size: 18px;
+    line-height: 150%;
+    color: darkcyan;
+    background: whitesmoke;
+}
+
+.jumbotron {
+    padding: 25;
+    margin: 10;
+    color: white;
+    background: darkcyan;
+}
+
+p {
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+  }
+
+.card {
+
+    color: whitesmoke;
+    background: darkcyan;
+}

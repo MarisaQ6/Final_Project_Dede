@@ -14,6 +14,7 @@ import Register from "./components/Register";
 import {Container} from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/PublicRoute";
+import Main from "./components/Main";
 import './App.css';
 
 //I want to add some basic inline styling here, even though we are bringing in styles
@@ -26,6 +27,7 @@ const AuthExample = () => (
 	<Router>
 		<div>
       		<Nav className="App-header"/>
+			  <Main />
 			<Container>
 				<AuthButton/>
 				<ul style={listStyle}>

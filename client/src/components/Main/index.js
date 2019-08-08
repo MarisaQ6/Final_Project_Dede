@@ -1,5 +1,5 @@
 import React from "react";
-// import "./style.css";
+import "./style.css";
 
 function Main() {
   return(
@@ -18,7 +18,7 @@ function Main() {
 
   <p>
 
-    <img src="C:\Users\14079\Desktop\Final_Project\DeDe\images\DeDe1.png" style="width:300px;height:300px"/>
+    <img src="C:\Users\14079\Desktop\Final_Project\DeDe\images\DeDe1.png"/>
 
     Lorem ipsum dolor amet freegan leggings polaroid, iPhone tacos raclette normcore fixie offal pork belly schlitz ugh intelligentsia. Church-key distillery tousled sriracha prism palo santo. Fingerstache cronut tumblr chartreuse leggings, hell of taiyaki meh keytar normcore. Thundercats keytar jianbing, coloring book try-hard vinyl selvage. XOXO kitsch chia hoodie 8-bit, you probably haven't heard of them adaptogen authentic meh literally affogato synth.
 
@@ -27,6 +27,7 @@ function Main() {
 Heirloom food truck kinfolk hot chicken pickled. Asymmetrical kinfolk distillery, small batch gochujang jianbing master cleanse helvetica. Locavore subway tile fashion axe snackwave, mlkshk jianbing listicle fixie hot chicken irony brunch quinoa ennui glossier salvia. Narwhal irony venmo gluten-free hella pork belly. Swag kale chips irony banjo. Tbh adaptogen jean shorts sriracha authentic kogi slow-carb cronut gentrify.
 
   </p>
+  
   </div>
 
 
