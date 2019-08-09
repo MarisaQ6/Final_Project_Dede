@@ -15,6 +15,9 @@ import {Container} from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/PublicRoute";
 import Main from "./components/Main";
+import Header from "./components/Header";
+import Page2 from "./components/Page2";
+import Footer from "./components/Footer";
 import './App.css';
 
 //I want to add some basic inline styling here, even though we are bringing in styles
@@ -26,6 +29,7 @@ const listStyle = {
 const AuthExample = () => (
 	<Router>
 		<div>
+			<Header/>
       		{/* <Nav className="App-header"/> */}
 			<Container>
 				{/* <AuthButton/>
@@ -36,6 +40,7 @@ const AuthExample = () => (
 				</ul> */}
 				<Switch>
 					<Route exact path="/" component={Main}/>
+					<Route exact path="/pagetwo" component={Page2}/>
 					<Route exact path="/public" component={PublicRoute}/>
 					<Route exact path="/login" component={Login}/>
 					<Route exact path="/register" component={Register}/>
@@ -43,6 +48,7 @@ const AuthExample = () => (
 					{/* <Route component={NoMatch} /> */}
 				</Switch>
 			</Container>
+			<Footer/>
 		</div>
 	</Router>
 )
