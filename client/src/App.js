@@ -17,6 +17,7 @@ import ProtectedRoute from "./pages/PublicRoute";
 import Main from "./components/Main";
 import Header from "./components/Header";
 import Page2 from "./components/Page2";
+import Page3 from "./components/Page3";
 import Footer from "./components/Footer";
 import './App.css';
 
@@ -41,6 +42,7 @@ const AuthExample = () => (
 				<Switch>
 					<Route exact path="/" component={Main}/>
 					<Route exact path="/pagetwo" component={Page2}/>
+					<Route exact path="/pagethree" component={Page3}/>
 					<Route exact path="/public" component={PublicRoute}/>
 					<Route exact path="/login" component={Login}/>
 					<Route exact path="/register" component={Register}/>
