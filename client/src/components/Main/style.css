@@ -4,7 +4,7 @@ body {
     font-family: 'Red Hat Display', sans-serif;;
     font-size: 18px;
     line-height: 150%;
-    color: darkcyan;
+    color: darkmagenta;
     background: whitesmoke;
 }
 
@@ -12,7 +12,7 @@ body {
     padding: 25;
     margin: 10;
     color: white;
-    background: darkcyan;
+    background-image: "C:\Users\14079\Desktop\Final_ProjectNEW\Final_Project_Dede\client\src\images\barbackgroun1.jpg";
 }
 
 p {
