@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import './style.css'
 
 class LoginForm extends React.Component {
@@ -24,9 +25,9 @@ class LoginForm extends React.Component {
 					<div className="form-group">
 						<input className="form-control" ref={(input) => this.usernameElem = input} type='text' name="username" placeholder='Enter Username' /><br/>
 						<input className="form-control" ref={(input) => this.passwordElem = input} type='password' name="password" placeholder='Password' /><br/>
-						<button className="btn btn-success loginbtn" type='submit'>
+						<Link to="/pagetwo"><button className="btn btn-success loginbtn" type='submit'>
 							Submit
-						</button>
+						</button></Link>
 					</div>
 				</form>
 			

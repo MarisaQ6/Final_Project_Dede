@@ -10,5 +10,5 @@ const deDeSchema = new Schema({
 });
 
 
-const Dede = mongoost.model("DeDe", deDeSchema);
+const Dede = mongoose.model("DeDe", deDeSchema);
 module.exports = Dede;

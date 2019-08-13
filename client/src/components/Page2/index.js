@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import {Link} from 'react-router-dom';
 import Main from "../Main";
 
 function Page2(){
@@ -24,7 +25,7 @@ function Page2(){
       <legend className="col-form-label col-sm-2 pt-0">Gender</legend>
       <div className="col-sm-10">
         <div className="form-check">
-          <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked/>
+          <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"/>
           <label className="form-check-label" for="gridRadios1">
             Male
           </label>
@@ -35,7 +36,7 @@ function Page2(){
             Female
           </label>
         </div>
-        <div className="form-check-input">
+        <div className="form-check">
           <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"/>
           <label className="form-check-label" for="gridRadios3">
             Non-Binary
@@ -57,17 +58,12 @@ function Page2(){
   </div>
   <div className="form-group row">
     <div className="col-sm-10">
-      <button type="submit" className="btn btn-primary">Let's Go!</button>
+      <Link to="/pagethree"><button type="submit" className="btn btn-primary">Let's Go!</button></Link>
     </div>
   </div>
 </form>
-        </div>
-
-/* The results for the Height/Weight/Gender and DataBase for drinks will be calculated here</div> */
-
 
 
     )
 }
-
 export default Page2;
