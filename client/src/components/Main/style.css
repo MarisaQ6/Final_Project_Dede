@@ -3,8 +3,9 @@ body {
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;;
     font-size: 18px;
+    font-weight: bold;
     line-height: 150%;
-    color: darkmagenta;
+    color: rgb(73, 3, 73);
     background: whitesmoke;
 }
 
@@ -12,7 +13,9 @@ body {
     padding: 25;
     margin: 10;
     color: white;
-    background-image: "C:\Users\14079\Desktop\Final_ProjectNEW\Final_Project_Dede\client\src\images\barbackgroun1.jpg";
+    font-weight: bold;
+    background-image: url("https://images.unsplash.com/photo-1509807995916-c332365e2d9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=971&q=80");
+    background-repeat: repeat-x;
 }
 
 p {
@@ -23,5 +26,5 @@ p {
 .card {
 
     color: whitesmoke;
-    background: darkcyan;
+    background: rgb(73, 3, 73);
 }

@@ -17,13 +17,38 @@ class Page2 extends Component {
       finalCal: 0
     }
 
-    handleInputChange = event => {
-        const { name, value } = event.target
-
-        this.setState({
-          [name] : value
-        })
+    handleInputChangeGender = event => {
+     this.setState({gender: event.target.value});
+     
+      if (this.state.gender === "female"){
+        console.log("female")
+        this.setState({ genderConst: 0.55 })
+  
+      }  else if (this.state.gender === "male") {
+        console.log("male")
+        this.setState({ genderConst: 0.68 })
+    } else {
+      console.log("other")
+      this.setState({ genderConst: 0.62 })
     }
+      }
+  
+      handleInputChangeWeight= event => {
+        this.setState({weight: event.target.value});
+                 
+         }
+
+         handleInputChangeNumberDrinks= event => {
+          this.setState({numberDrinks: event.target.value});
+                     
+           }
+
+           handleInputChangeTime= event => {
+            this.setState({time: event.target.value});
+                       
+             }
+   
+    
 
   //  calculateBAC = () => {
   //     let genderConst = this.state.genderConst;
@@ -36,22 +61,22 @@ class Page2 extends Component {
 
 
 
-    handleFromSubmite = event => {
+    handleFormSubmit = event => {
       event.preventDefault()
       // alert("form works..!")
       // console.log(this.state.gender)
 
-      if (this.state.gender === "female"){
-        console.log("female")
-        this.setState({ genderConst: 0.55 })
+    //   if (this.state.gender === "female"){
+    //     console.log("female")
+    //     this.setState({ genderConst: 0.55 })
   
-      }  else if (this.state.gender === "male") {
-        console.log("male")
-        this.setState({ genderConst: 0.68 })
-    } else {
-      console.log("other")
-      this.setState({ genderConst: 0.62 })
-    }
+    //   }  else if (this.state.gender === "male") {
+    //     console.log("male")
+    //     this.setState({ genderConst: 0.68 })
+    // } else {
+    //   console.log("other")
+    //   this.setState({ genderConst: 0.62 })
+    // }
 
 
     // this.calculateBAC()
@@ -87,7 +112,12 @@ class Page2 extends Component {
     // alert(this.state.weightCalc)
 
     console.log("genderConst ", this.state.bac) 
-
+    console.log("male", this.state.gender)
+    console.log("female", this.state.gender)
+    console.log("other", this.state.gender)
+    console.log("weightCalc", this.state.weight)
+    console.log("gramsOfAlcohol", this.state.numberDrinks)
+    console.log("bac", this.state.bac)
 
 
 
@@ -102,7 +132,8 @@ class Page2 extends Component {
       // })
 
 
-    }
+  }
+
 
 
 
@@ -112,19 +143,12 @@ render () {
     
             <form>
                     Gender: <br></br>
-                    {/* <select id="gender" value={this.state.gender} onChange={this.handleInputChange}>
+                    <select id="gender" value={this.state.gender} onChange={this.handleInputChangeGender}>
                         <option value="female" name="gender">Female</option>
                         <option value="male" name="gender">Male</option>
-                        <option value="neither" name="gender">Other</option>
-                    </select> */}
-                     <input 
-                    type="text" 
-                    id="gender" 
-                    value={this.state.gender}
-                    name="gender"
-                    placeholder="female"
-                    onChange={this.handleInputChange}
-                    />
+                        <option value="other" name="gender">Other</option>
+                    </select>
+                     
                     <br></br> Weight: <br></br>
                     <input 
                     type="number" 
@@ -132,7 +156,7 @@ render () {
                     value={this.state.weight}
                     name="weight"
                     placeholder="140"
-                    onChange={this.handleInputChange}
+                    onChange={this.handleInputChangeWeight}
                     /> lbs
                     <br></br>Number of standard drinks:<br></br>
                     <input 
@@ -141,7 +165,7 @@ render () {
                     value={this.state.numberDrinks}
                     name="numberDrinks"
                     placeholder="1"
-                    onChange={this.handleInputChange}
+                    onChange={this.handleInputChangeNumberDrinks}
                     />
                     <br></br>Amount of time elapsed:<br></br>
                     <input 
@@ -150,12 +174,12 @@ render () {
                     value={this.state.time}
                     name="time"
                     placeholder="1"
-                    onChange={this.handleInputChange}
+                    onChange={this.handleInputChangeTime}
                     /> hours
                     
                     <br></br>
 
-                    <input onClick={this.handleFromSubmite} type="button" id="go" value="Submit" onclick="calculateBAC();"/><br></br>
+                    <input onClick={this.handleFormSubmit} type="button" id="go" value="Submit"/><br></br>
               </form>
 
               <p>{this.state.bac}</p>
@@ -169,5 +193,6 @@ render () {
 
     )
 }
-}
+}    
+
 export default Page2;
