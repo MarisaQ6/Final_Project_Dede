@@ -12,23 +12,24 @@ class LoginForm extends React.Component {
 		const { onLogin } = this.props;
 		return (
 			
-				<form
-					ref={(elem) => this.form = elem}
-					onSubmit={(e) => {
+				<form>
+					<div>
+					{/* ref={(elem) => this.form = elem} onSubmit={(e) => {
 						e.preventDefault();
 						return onLogin({
 							username: this.usernameElem.value,
 							password: this.passwordElem.value
 						});
-					}}
-				>
+					}}; */}
+				</div>
 					<div className="form-group">
 						<input className="form-control" ref={(input) => this.usernameElem = input} type='text' name="username" placeholder='Enter Username' /><br/>
 						<input className="form-control" ref={(input) => this.passwordElem = input} type='password' name="password" placeholder='Password' /><br/>
 						<Link to="/pagetwo"><button className="btn btn-success loginbtn" type='submit'>
-							Let's Go!
+							DeDe Says "Let's Do This!
 						</button></Link>
 					</div>
+ 			
 				</form>
 			
 		)

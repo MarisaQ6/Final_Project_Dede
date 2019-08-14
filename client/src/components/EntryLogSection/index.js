@@ -14,7 +14,7 @@ function EntryLogSection() {
         <div className="row">
         <div className="col-6">
 
-            <img src="../../images/DeDe.png" alt="Dede picture" width="300" height="400"/>
+            
             </div>
         <div className="col-6">
             <LoginForm/>
